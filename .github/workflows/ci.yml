@@ -1,0 +1,18 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      # Placeholder: replace with your install, lint, test and build steps.
+      - name: Placeholder
+        run: echo "Add project checks here"
