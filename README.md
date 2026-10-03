@@ -1,3 +1,5 @@
+> Starting a Rust, TypeScript, Next.js, Nuxt, Python or macOS Swift project? Use the stack-specific templates instead: [alliecatowo/templates](https://github.com/alliecatowo/templates) lists them. This repo is the blank, language-agnostic starting point.
+
 # <!-- Project name -->
 
 <!-- One-line description: what it does and who it is for. -->
