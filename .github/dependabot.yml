@@ -1,20 +1,14 @@
+# Weekly version updates. Minor and patch bumps are grouped into one PR and
+# auto-merged by .github/workflows/dependabot-automerge.yml once required CI is
+# green; major bumps arrive as separate PRs labelled `major-update`.
 version: 2
 updates:
-  - package-ecosystem: github-actions
-    directory: /
-    schedule:
-      interval: weekly
-
-  # Uncomment the ecosystems this project uses.
-  # - package-ecosystem: npm
-  #   directory: /
-  #   schedule:
-  #     interval: weekly
-  # - package-ecosystem: cargo
-  #   directory: /
-  #   schedule:
-  #     interval: weekly
-  # - package-ecosystem: pip
-  #   directory: /
-  #   schedule:
-  #     interval: weekly
+- package-ecosystem: github-actions
+  directory: /
+  schedule:
+    interval: weekly
+  groups:
+    minor-and-patch:
+      update-types:
+      - minor
+      - patch
